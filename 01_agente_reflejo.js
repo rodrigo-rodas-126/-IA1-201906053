@@ -30,7 +30,7 @@ function test(states) {
         const state = (states[0] === 'A') ? states[1] : states[2];
         const action = reflexAgent(location, state, aBclean);
         console.log(`Location: ${location} | Action: ${action}`);
-        document.getElementById("log").innerHTML+="<br>Location: ".concat(location).concat(" | Action: ").concat(action_result);
+        document.getElementById("log").innerHTML+="<br>Location: ".concat(location).concat(" | Action: ").concat(action);
         
         if (action === "CLEAN") {
             if (location === 'A') {
